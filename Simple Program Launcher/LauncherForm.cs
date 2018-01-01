@@ -141,7 +141,7 @@ namespace Simple_Program_Launcher
             FastZip zip = new FastZip(zipEvents);
             zipEvents.Progress += ZipProgress;
 
-            Task.Run(() => ExtractZipFromDownload(zip));
+            ExtractZipFromDownload(zip);
         }
 
         private void ExtractZipFromDownload(FastZip zip)
