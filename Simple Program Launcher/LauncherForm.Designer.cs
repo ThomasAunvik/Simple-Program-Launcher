@@ -38,6 +38,8 @@
             this.SettingsButton = new System.Windows.Forms.Button();
             this.DownloadPercentage = new System.Windows.Forms.Label();
             this.InstallPercentage = new System.Windows.Forms.Label();
+            this.ErrorText = new System.Windows.Forms.Label();
+            this.VersionText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -64,23 +66,23 @@
             // 
             this.InstallProgressBar.Location = new System.Drawing.Point(16, 529);
             this.InstallProgressBar.Name = "InstallProgressBar";
-            this.InstallProgressBar.Size = new System.Drawing.Size(796, 23);
+            this.InstallProgressBar.Size = new System.Drawing.Size(824, 23);
             this.InstallProgressBar.TabIndex = 2;
             // 
             // DownloadProgressBar
             // 
             this.DownloadProgressBar.Location = new System.Drawing.Point(16, 476);
             this.DownloadProgressBar.Name = "DownloadProgressBar";
-            this.DownloadProgressBar.Size = new System.Drawing.Size(796, 23);
+            this.DownloadProgressBar.Size = new System.Drawing.Size(824, 23);
             this.DownloadProgressBar.TabIndex = 3;
             // 
             // CheckForUpdateButton
             // 
-            this.CheckForUpdateButton.Location = new System.Drawing.Point(828, 476);
+            this.CheckForUpdateButton.Location = new System.Drawing.Point(846, 476);
             this.CheckForUpdateButton.Name = "CheckForUpdateButton";
             this.CheckForUpdateButton.Size = new System.Drawing.Size(110, 35);
             this.CheckForUpdateButton.TabIndex = 4;
-            this.CheckForUpdateButton.Text = "Check For Update";
+            this.CheckForUpdateButton.Text = "Check For Updates";
             this.CheckForUpdateButton.UseVisualStyleBackColor = true;
             this.CheckForUpdateButton.Click += new System.EventHandler(this.CheckForUpdateButton_Click);
             // 
@@ -96,7 +98,7 @@
             // 
             // ForceUpdateButton
             // 
-            this.ForceUpdateButton.Location = new System.Drawing.Point(828, 517);
+            this.ForceUpdateButton.Location = new System.Drawing.Point(846, 517);
             this.ForceUpdateButton.Name = "ForceUpdateButton";
             this.ForceUpdateButton.Size = new System.Drawing.Size(110, 35);
             this.ForceUpdateButton.TabIndex = 6;
@@ -106,9 +108,9 @@
             // 
             // SettingsButton
             // 
-            this.SettingsButton.Location = new System.Drawing.Point(962, 523);
+            this.SettingsButton.Location = new System.Drawing.Point(962, 517);
             this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(106, 29);
+            this.SettingsButton.Size = new System.Drawing.Size(106, 35);
             this.SettingsButton.TabIndex = 7;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.UseVisualStyleBackColor = true;
@@ -130,9 +132,29 @@
             this.InstallPercentage.Size = new System.Drawing.Size(0, 13);
             this.InstallPercentage.TabIndex = 9;
             // 
+            // ErrorText
+            // 
+            this.ErrorText.AutoSize = true;
+            this.ErrorText.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.ErrorText.Location = new System.Drawing.Point(13, 433);
+            this.ErrorText.Name = "ErrorText";
+            this.ErrorText.Size = new System.Drawing.Size(0, 13);
+            this.ErrorText.TabIndex = 10;
+            // 
+            // VersionText
+            // 
+            this.VersionText.AutoSize = true;
+            this.VersionText.Location = new System.Drawing.Point(1031, 457);
+            this.VersionText.Name = "VersionText";
+            this.VersionText.Size = new System.Drawing.Size(37, 13);
+            this.VersionText.TabIndex = 11;
+            this.VersionText.Text = "v0.0.0";
+            // 
             // LauncherForm
             // 
             this.ClientSize = new System.Drawing.Size(1080, 564);
+            this.Controls.Add(this.VersionText);
+            this.Controls.Add(this.ErrorText);
             this.Controls.Add(this.InstallPercentage);
             this.Controls.Add(this.DownloadPercentage);
             this.Controls.Add(this.SettingsButton);
@@ -162,6 +184,8 @@
         private System.Windows.Forms.Button SettingsButton;
         private System.Windows.Forms.Label DownloadPercentage;
         private System.Windows.Forms.Label InstallPercentage;
+        private System.Windows.Forms.Label ErrorText;
+        private System.Windows.Forms.Label VersionText;
     }
 }
 

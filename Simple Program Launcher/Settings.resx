@@ -216,7 +216,7 @@
     <value>4</value>
   </data>
   <data name="SelectInstallDirectory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 13</value>
+    <value>416, 9</value>
   </data>
   <data name="SelectInstallDirectory.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 21</value>

@@ -95,6 +95,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ico\FrontPage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ico\Settings-icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
